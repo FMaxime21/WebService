@@ -1,6 +1,7 @@
 package com.example.demoWebService;
 
-public class Date {
+public class Date
+{
 
     private String begin;
     private String end;

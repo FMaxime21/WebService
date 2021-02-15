@@ -14,26 +14,32 @@ public class CarService {
 
     private List<Car> cars = new ArrayList<Car>();
 
-    public CarService() {
+    public CarService()
+    {
         cars.add(new Car("11AA22", "Ferrari", 1000));
         cars.add(new Car("33BB44", "Porsche", 2222));
     }
 
     @GetMapping("/cars")
-    public List<Car> getListOfCars(){
+    public List<Car> getListOfCars()
+    {
         return cars;
     }
 
     @PostMapping("/cars")
-    public void addCar(@RequestBody Car car) throws Exception{
+    public void addCar(@RequestBody Car car) throws Exception
+    {
         System.out.println(car);
         cars.add(car);
     }
 
     @GetMapping("/cars/{plateNumber}")
-    public Car getCar(@PathVariable(value = "plateNumber") String plateNumber){
-        for(Car car: cars){
-            if(car.getPlateNumber().equals(plateNumber)){
+    public Car getCar(@PathVariable(value = "plateNumber") String plateNumber)
+    {
+        for(Car car: cars)
+        {
+            if(car.getPlateNumber().equals(plateNumber))
+            {
                 return car;
             }
         }

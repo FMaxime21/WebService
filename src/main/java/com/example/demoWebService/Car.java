@@ -2,7 +2,8 @@ package com.example.demoWebService;
 
 import java.util.ArrayList;
 
-public class Car {
+public class Car
+{
 
     private String plateNumber;
     private String brand;
@@ -13,11 +14,13 @@ public class Car {
 
 
 
-    public Car() {
+    public Car()
+    {
         super();
     }
 
-    public Car(String plateNumber, String brand, int price) {
+    public Car(String plateNumber, String brand, int price)
+    {
         super();
         this.plateNumber = plateNumber;
         this.brand = brand;
@@ -26,48 +29,59 @@ public class Car {
         Rents = new ArrayList<>();
     }
 
-    public String getPlateNumber() {
+    public String getPlateNumber()
+    {
         return plateNumber;
     }
 
-    public void setPlateNumber(String plateNumber) {
+    public void setPlateNumber(String plateNumber)
+    {
         this.plateNumber = plateNumber;
     }
 
-    public String getBrand() {
+    public String getBrand()
+    {
         return brand;
     }
 
-    public void setBrand(String brand) {
+    public void setBrand(String brand)
+    {
         this.brand = brand;
     }
 
-    public int getPrice() {
+    public int getPrice()
+    {
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(int price)
+    {
         this.price = price;
     }
 
-    public boolean isRent() {
+    public boolean isRent()
+    {
         return rent;
     }
 
-    public void setRent(boolean rent) {
+    public void setRent(boolean rent)
+    {
         this.rent = rent;
     }
 
-    public ArrayList<Rent> getRents() {
+    public ArrayList<Rent> getRents()
+    {
         return Rents;
     }
 
-    public void setRents(ArrayList<Rent> rents) {
+    public void setRents(ArrayList<Rent> rents)
+    {
         this.Rents = rents;
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "Car [plateNumber=" + plateNumber + ", brand=" + brand + ", price=" + price + "]";
     }
 
