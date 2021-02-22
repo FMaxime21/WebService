@@ -13,7 +13,6 @@ public class Car
     private ArrayList<Rent> Rents;
 
 
-
     public Car()
     {
         super();

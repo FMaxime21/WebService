@@ -29,20 +29,12 @@ public class CarService {
     @PostMapping("/cars")
     public void addCar(@RequestBody Car car) throws Exception
     {
-        System.out.println(car);
-        cars.add(car);
+
     }
 
     @GetMapping("/cars/{plateNumber}")
     public Car getCar(@PathVariable(value = "plateNumber") String plateNumber)
     {
-        for(Car car: cars)
-        {
-            if(car.getPlateNumber().equals(plateNumber))
-            {
-                return car;
-            }
-        }
         return null;
     }
 
